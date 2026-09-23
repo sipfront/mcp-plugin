@@ -3,9 +3,9 @@
 Plugin spec: <https://code.claude.com/docs/en/plugins>. Keep the number of
 commands strictly low: two commands (`run-test`, `analyze-failures`) plus one
 background skill (`sipfront-testing`) that applies when the user talks about
-Sipfront or call testing. New capabilities go into the background skill or
-plain-language instructions, not into new commands, unless a task is both
-frequent and needs an argument.
+Sipfront, voice testing or voice AI testing. New capabilities go into the
+background skill or plain-language instructions, not into new commands, unless
+a task is both frequent and needs an argument.
 
 The MCP tools are defined in the `mcp-server` repository
 (`src/mcp_server_sipfront/server.py`); skill instructions must only name tools
