@@ -1,0 +1,6 @@
+{
+  "sipfront": {
+    "type": "http",
+    "url": "https://mcp.sipfront.net/mcp"
+  }
+}
