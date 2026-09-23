@@ -1,7 +1,7 @@
 {
   "name": "sipfront",
   "version": "1.0.0",
-  "description": "Sipfront MCP server integration for Claude Code: create and run telecom call tests, read results and analyze failed calls from your Sipfront account.",
+  "description": "Sipfront MCP server integration for Claude Code: create and run voice and voice AI tests, verify voice agents end to end, read results and analyze failed calls from your Sipfront account.",
   "author": {
     "name": "Sipfront GmbH",
     "url": "https://sipfront.com"
@@ -9,7 +9,7 @@
   "homepage": "https://sipfront.com/docs/integrations/mcp-server/",
   "repository": "https://github.com/sipfront/mcp-plugin",
   "license": "MIT",
-  "keywords": ["sipfront", "sip", "voip", "webrtc", "telecom", "testing", "mcp"],
+  "keywords": ["sipfront", "voice-ai", "voice-agent", "voicebot", "conversational-ai", "call-quality", "sip", "voip", "webrtc", "testing", "mcp"],
   "mcpServers": "./.mcp.json",
   "skills": "./skills/"
 }

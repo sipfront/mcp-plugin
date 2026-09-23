@@ -8,7 +8,7 @@
     {
       "name": "sipfront",
       "source": "./",
-      "description": "Sipfront MCP server integration for Claude Code. Create and run telecom call tests, read results and analyze failed calls from your Sipfront account."
+      "description": "Sipfront MCP server integration for Claude Code. Create and run voice and voice AI tests, verify voice agents end to end, read results and analyze failed calls from your Sipfront account."
     }
   ]
 }
