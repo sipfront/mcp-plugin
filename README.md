@@ -5,7 +5,7 @@ The official Claude Code plugin for the **[Sipfront MCP server](https://sipfront
 ## What it does
 
 - Connects to the hosted MCP server at `https://mcp.sipfront.net/mcp`. You sign in once with a Sipfront API key; no local server, no Docker.
-- Gives Claude the Sipfront tools: projects, tests, runs, results, transcripts, conversation turns, SIP traces, call states, audio and RTP statistics, targets, credential pools, testbooks and a persistent memory for findings.
+- Gives Claude the Sipfront tools: projects, tests, runs, results, transcripts, conversation turns, SIP traces, call states, audio and RTP statistics, run artifacts (call and screen recordings, screenshots, browser console and network logs), targets, credential pools, testbooks and a persistent memory for findings.
 - Teaches Claude how Sipfront works (load the API docs first, fetch scenario parameters before creating a test, compare failed runs with passing ones, ask before changing anything).
 
 ### Commands
