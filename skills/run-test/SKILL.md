@@ -9,7 +9,7 @@ Run the Sipfront test given in $ARGUMENTS, wait for the result and summarize it.
 
 1. **Resolve the test.** Call `sipfront_list_projects` and `sipfront_list_tests` to find the test by name or ID. If several match, list them with project names and ask which one. If the user names a project instead of a test, offer `sipfront_run_project` for all its tests.
 2. **Start it.** Call `sipfront_run_test` with the test ID and keep the returned `session_uuid`.
-3. **Wait.** Call `sipfront_wait_for_run_finished` with that `session_uuid` (default timeout 600 s). If it times out, tell the user the run is still going and how to check it later with `sipfront_get_run_status`.
+3. **Wait.** Call `sipfront_check_for_run_finished` with that `session_uuid`; it returns at once. While `finished` is false, wait about 15 s and call it again. A result with `check_failed` means the status could not be read this time, not that the run failed: check again. If the run is still going after about 10 minutes, stop and tell the user how to check it later with `sipfront_get_run_status`.
 4. **Report.** State pass/fail, duration and the link or IDs the user needs. On a failure, fetch `sipfront_stats_for_run` (transcript, turn and latency metrics, audio quality), `sipfront_siptrace_for_run` and `sipfront_callstates_for_run`, quote the decisive transcript turn, metric or SIP response, give the most likely cause and offer `/sipfront:analyze-failures <test>` for a comparison with earlier runs.
 
 ## Edge cases
